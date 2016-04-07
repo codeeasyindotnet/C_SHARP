@@ -1,0 +1,23 @@
+﻿<Controls:MetroWindow x:Class="select_delete_insert_update_from_csharp.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      	xmlns:pageTransitions="clr-namespace:WpfPageTransitions;assembly=WpfPageTransitions"
+                       GlowBrush="{DynamicResource AccentColorBrush}"
+                      Title="Select, Update, Insert, Delete con Store Procedure"
+                      WindowStartupLocation="CenterScreen"
+                      Height="720"
+                      Width="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <pageTransitions:PageTransition Grid.Row="1" Name="pageTransition" Margin="25,15.6,24.6,25.4" TransitionType="Slide"  />
+        <Button Grid.Row="0"  x:Name="button_seleccionar" Content="seleccionar" HorizontalAlignment="Left" Margin="341,41,0,0" VerticalAlignment="Top" Width="173" Height="32" Click="button_seleccionar_Click" />
+        <Label Grid.Row="0" x:Name="label" Content="Selecciona la accion para ejecutar" HorizontalAlignment="Left" Margin="25,41,0,0" VerticalAlignment="Top" Height="41" FontSize="18.667"/>
+        <Button Grid.Row="0"  x:Name="button_borrar" Content="borrar" HorizontalAlignment="Left" Margin="931,41,0,0" VerticalAlignment="Top" Width="173" Height="32" Click="button_borrar_Click"/>
+        <Button Grid.Row="0"  x:Name="button_actualizar" Content="actualizar" HorizontalAlignment="Left" Margin="730,41,0,0" VerticalAlignment="Top" Width="173" Height="32" Click="button_actualizar_Click"/>
+        <Button Grid.Row="0"  x:Name="button_insertar" Content="insertar" HorizontalAlignment="Left" Margin="535,41,0,0" VerticalAlignment="Top" Width="173" Height="32" Click="button_insertar_Click"/>
+    </Grid>
+</Controls:MetroWindow>
