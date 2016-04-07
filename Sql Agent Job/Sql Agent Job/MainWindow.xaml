@@ -1,0 +1,19 @@
+﻿<Controls:MetroWindow x:Class="Sql_Agent_Job.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                      Title="Monitoring SQL Job"
+                      WindowStartupLocation="CenterScreen"
+                      Height="350"
+                      Width="404.411">
+    <Grid>
+        <Button x:Name="read_job" Content="Read Jobs" HorizontalAlignment="Left" Margin="282,51,0,0" VerticalAlignment="Top" Width="100" Click="read_job_Click"/>
+        <ComboBox x:Name="comboBox_Jobs" HorizontalAlignment="Left" Margin="19,51,0,0" VerticalAlignment="Top" Width="253" SelectionChanged="comboBox_Jobs_SelectionChanged"/>
+        <ComboBox x:Name="comboBox_Jobs_steps"   HorizontalAlignment="Left" Margin="19,120,0,0" VerticalAlignment="Top" Width="253"/>
+        <Label x:Name="label" Content="Jobs" HorizontalAlignment="Left" Margin="19,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Steps" HorizontalAlignment="Left" Margin="19,94,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="execute_job" Content="execute job" HorizontalAlignment="Left" Margin="282,120,0,0" VerticalAlignment="Top" Width="100" Click="execute_job_Click"/>
+        <ListBox x:Name="listBox_job_steps" Margin="19,166,14,17" OpacityMask="Black" BorderBrush="#FFB4B4B4" Background="#FFE8E8E8"/>
+
+    </Grid>
+</Controls:MetroWindow>
