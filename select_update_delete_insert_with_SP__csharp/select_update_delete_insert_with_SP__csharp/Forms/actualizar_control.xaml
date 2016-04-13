@@ -7,7 +7,7 @@
              xmlns:local="clr-namespace:select_delete_insert_update_from_csharp"
              mc:Ignorable="d" Width="1200" Height="474.513" Loaded="UserControl_Loaded">
     <Grid OpacityMask="Black" Margin="10,10,10,9.4">
-        <Button x:Name="button_seleccionar_todo"  Content="seleccionar todo" HorizontalAlignment="Left" Margin="314,130,0,0" VerticalAlignment="Top" Width="210" Background="#FFF7F7F7" />
+        <Button x:Name="button_seleccionar_todo"  Click="button_seleccionar_todo_Click" Content="seleccionar todo" HorizontalAlignment="Left" Margin="314,130,0,0" VerticalAlignment="Top" Width="210" Background="#FFF7F7F7" />
         <Button x:Name="button_ACTUALIZAR" Content="ACTUALIZACION" HorizontalAlignment="Left" Margin="24,136,0,0" VerticalAlignment="Top" Width="163"   Height="30" Click="button_ACTUALIZAR_Click" />
         <TextBox x:Name="textBox_condicion" Controls:TextboxHelper.Watermark="Condicion" HorizontalAlignment="Left" Height="30" Margin="24,79,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="80"/>
         <TextBox x:Name="textBox_ACCOUNT_NUMBER" Controls:TextboxHelper.Watermark="ACCOUNT NUMBER" HorizontalAlignment="Left" Height="30" Margin="22,267,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="251"/>
