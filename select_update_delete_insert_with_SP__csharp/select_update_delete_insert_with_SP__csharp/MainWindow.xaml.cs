@@ -21,6 +21,7 @@ namespace select_delete_insert_update_from_csharp
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        //Objetos para nombrar a las formas
         seleccionar_control seleccionar_form = new seleccionar_control();
         Insertar_Control insertar_form = new Insertar_Control();
         borrar_control borrar_form = new borrar_control();
@@ -33,25 +34,25 @@ namespace select_delete_insert_update_from_csharp
 
         private void button_seleccionar_Click(object sender, RoutedEventArgs e)
         {
-
+            //Con esto accedemos a la forma
             pageTransition.ShowPage(seleccionar_form);
         }
 
         private void button_borrar_Click(object sender, RoutedEventArgs e)
         {
-
+            //Con esto accedemos a la forma
             pageTransition.ShowPage(borrar_form);
         }
 
         private void button_actualizar_Click(object sender, RoutedEventArgs e)
         {
-
+            //Con esto accedemos a la forma
             pageTransition.ShowPage(actualizar_form);
         }
 
         private void button_insertar_Click(object sender, RoutedEventArgs e)
         {
-
+            //Con esto accedemos a la forma
             pageTransition.ShowPage(insertar_form);
         }
     }
